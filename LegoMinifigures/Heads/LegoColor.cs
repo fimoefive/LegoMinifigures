@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace LegoMinifigures.Heads
 {
-    class LegoColor
+    enum LegoColor
     {
+        Yellow,
+        White,
+        Brown,
+        Green,
+        Red,
+        Black
     }
 }

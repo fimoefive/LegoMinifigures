@@ -10,6 +10,7 @@ namespace LegoMinifigures.Torsos
     {
         public bool HasPullString { get; set; }
         public bool HasHolster { get; set; }
+
         public override void Greeting()
         {
             base.Greeting();
@@ -20,7 +21,10 @@ namespace LegoMinifigures.Torsos
         {
             Console.WriteLine("Cowboy friendly reaches for their holster.")
         }
-
+        public void LassoDance()
+        {
+            Console.WriteLine("To move like a cowboy, its all in that wrist!");
+        }
 
     }
 }

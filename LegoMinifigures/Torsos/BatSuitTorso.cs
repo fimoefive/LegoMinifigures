@@ -11,8 +11,8 @@ namespace LegoMinifigures.Torsos
         public bool HasBatBoomerang { get; set; }
         public override void Greeting()
         {
-            base.Greeting():
-                Console.WriteLine("Gives fist pump.");
+            base.Greeting();
+            Console.WriteLine("Gives fist pump.");
         }
         public override void Wiggle()
         {

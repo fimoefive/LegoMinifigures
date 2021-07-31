@@ -36,9 +36,4 @@ namespace LegoMinifigures.Legs
 			Console.WriteLine("We float around on magic carpets, no walking allowed.");
 		}
 	}
-        public override void Walk()
-        {
-            Console.WriteLine("We float around on magic carpets, no walking allowed.");
-        }
-    }
 }
