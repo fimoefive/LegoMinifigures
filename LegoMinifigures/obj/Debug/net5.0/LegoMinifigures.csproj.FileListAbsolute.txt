@@ -1,0 +1,5 @@
+C:\Users\broth\OneDrive\Documents\workspace\C# Basics\LegoMinifigures\LegoMinifigures\obj\Debug\net5.0\LegoMinifigures.csproj.AssemblyReference.cache
+C:\Users\broth\OneDrive\Documents\workspace\C# Basics\LegoMinifigures\LegoMinifigures\obj\Debug\net5.0\LegoMinifigures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\broth\OneDrive\Documents\workspace\C# Basics\LegoMinifigures\LegoMinifigures\obj\Debug\net5.0\LegoMinifigures.AssemblyInfoInputs.cache
+C:\Users\broth\OneDrive\Documents\workspace\C# Basics\LegoMinifigures\LegoMinifigures\obj\Debug\net5.0\LegoMinifigures.AssemblyInfo.cs
+C:\Users\broth\OneDrive\Documents\workspace\C# Basics\LegoMinifigures\LegoMinifigures\obj\Debug\net5.0\LegoMinifigures.csproj.CoreCompileInputs.cache
