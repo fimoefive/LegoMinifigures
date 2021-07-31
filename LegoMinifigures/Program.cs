@@ -1,4 +1,8 @@
-﻿using System;
+﻿using LegoMinifigures.Heads;
+using LegoMinifigures.Legs;
+using LegoMinifigures.Torsos;
+using LegoMinifigures.Minifigures;
+using System;
 using System.Collections.Generic;
 
 namespace LegoMinifigures
@@ -7,11 +11,11 @@ namespace LegoMinifigures
     {
         static void Main(string[] args)
         {
-            var head = new ConstructionWorkerHead();    
+            var workerHead = new ConstructionWorkerHead();    
             workerHead.Color = LegoColor.Yellow;
             var batmanHead = new BatmanHead();
             var astronautHead = new AstronautHead();
-            var heads = new List<HeadBase>() { astronauntHead, batmanHead, workerHead };
+            var heads = new List<HeadBase>() { astronautHead, batmanHead, workerHead };
 
             foreach ( var head in heads)
             {
@@ -19,7 +23,7 @@ namespace LegoMinifigures
                 head.Spin();
             }
             var batmanTorso = new BatSuitTorso();
-            batmanTorso.Color = LegoColor.head;
+            batmanTorso.Color = LegoColor.Green;
             batmanTorso.HasBatBoomerang = true;
             batmanTorso.HasShirt = false;
             batmanTorso.Donates();
@@ -32,6 +36,37 @@ namespace LegoMinifigures
                 torso.Greeting();
                 torso.Wiggle();
             }
+
+            var seaLeg = new SeaLeg();
+            seaLeg.AreWobbly = true;
+            seaLeg.Bottoms = Bottoms.Chaps;
+            seaLeg.NumberOfLegs = 3;
+            seaLeg.Kicks = Shoes.ShelltoeAdidas;
+
+            var magicLeg = new MagicLeg();
+            magicLeg.Bottoms = Bottoms.Chaps; //this is magical
+            magicLeg.HasInvisibleLegs = true;
+            magicLeg.MeasuringLegs("small");
+                Console.WriteLine($"Magic legs has length of {magicLeg.Length}.");
+
+            var legs = new List<LegBase>() { seaLeg, magicLeg };
+
+            foreach (var leg in legs)
+            {
+                leg.Dance();
+                leg.Walk();
+            }
+
+            Console.WriteLine("Before Bob.");
+
+
+            //var bob = new Minifigure(workerHead, cowboyTorso, new SeaLeg());
+            var bob = new Minifigure(workerHead, cowboyTorso, seaLeg);
+            bob.BuildIt();
+
+
+            Console.WriteLine("You just saw Bob do his thang!");
+            Console.ReadLine();
 
         }
     }

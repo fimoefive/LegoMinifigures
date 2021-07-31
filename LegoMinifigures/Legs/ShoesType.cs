@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace LegoMinifigures.Legs
 {
-    public class ShoesType
-    {
         enum Shoes
         {
             CowboyBoots,
@@ -18,4 +16,3 @@ namespace LegoMinifigures.Legs
             None    
         }
     }
-}

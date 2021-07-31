@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LegoMinifigures.Heads
 {
-    class BatmanHead
+    class BatmanHead : HeadBase
     {
         public bool IswearingMask { get; set; }
         public string Version { get; set; }
@@ -21,7 +21,7 @@ namespace LegoMinifigures.Heads
         {
             Console.WriteLine("Where is the joker!?!?");
         }
-        public void SayHi()
+        public override void SayHi()
         {
             Console.WriteLine("I'm Batman");
         }

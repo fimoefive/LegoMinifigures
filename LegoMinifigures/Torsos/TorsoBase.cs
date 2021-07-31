@@ -7,7 +7,7 @@ using LegoMinifigures.Heads;
 
 namespace LegoMinifigures.Torsos
 {
-    class TorsoBase
+   abstract class TorsoBase
     {
         public bool  HasShirt { get; set; }
         public LegoColor Color { get; set; }
@@ -16,9 +16,6 @@ namespace LegoMinifigures.Torsos
         {
             Console.WriteLine("Give a High Five.");
         }
-        public virtual void Wiggle()
-        {
-            Console.WriteLine("Wiggle Butt");
-        }
+        public abstract void Wiggle();
     }
 }
