@@ -12,11 +12,11 @@ namespace LegoMinifigures.Heads
         public bool WearingHelment { get; set; }
         public FacialHair FacialHair { get; set; } 
 
-        public void SayHi()
+        public override void SayHi()
         {
             Console.WriteLine("Major Tom to Ground Control...");
         }
-        public void Spin()
+        public override void Spin()
         {
             Console.WriteLine("The Astronaut head spins to take in the beauty of the cosmos...");
         }
@@ -26,5 +26,5 @@ namespace LegoMinifigures.Heads
             FacialHair = FacialHair.None;
         }
 
+        }
     }
-}

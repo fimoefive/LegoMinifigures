@@ -8,7 +8,7 @@ namespace LegoMinifigures.Legs
 {
     class SeaLeg : LegBase
     { 
-        public bool AreWabely { get; set; }
+        public bool AreWobbly { get; set; }
         public int NumberOfLegs { get; set; }
         public void Swim()
         {

@@ -12,6 +12,7 @@ namespace LegoMinifigures.Legs
     {
         public Bottoms Bottoms { get; set; }
         public Shoes Kicks { get; set; }
+
         public virtual void Dance()
         {
             Console.WriteLine("Start doing the Electric Slide.");

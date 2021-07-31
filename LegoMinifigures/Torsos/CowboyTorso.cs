@@ -19,7 +19,7 @@ namespace LegoMinifigures.Torsos
 
         public override void Wiggle()
         {
-            Console.WriteLine("Cowboy friendly reaches for their holster.")
+            Console.WriteLine("Cowboy friendly reaches for their holster.");
         }
         public void LassoDance()
         {

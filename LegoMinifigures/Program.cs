@@ -1,4 +1,8 @@
-﻿using System;
+﻿using LegoMinifigures.Heads;
+using LegoMinifigures.Legs;
+using LegoMinifigures.Torsos;
+using LegoMinifigures.Minifigures;
+using System;
 using System.Collections.Generic;
 
 namespace LegoMinifigures
@@ -11,7 +15,7 @@ namespace LegoMinifigures
             workerHead.Color = LegoColor.Yellow;
             var batmanHead = new BatmanHead();
             var astronautHead = new AstronautHead();
-            var heads = new List<HeadBase>() { astronauntHead, batmanHead, workerHead };
+            var heads = new List<HeadBase>() { astronautHead, batmanHead, workerHead };
 
             foreach ( var head in heads)
             {
@@ -34,15 +38,15 @@ namespace LegoMinifigures
             }
 
             var seaLeg = new SeaLeg();
-            seaLeg.Arewabely = true;
+            seaLeg.AreWobbly = true;
             seaLeg.Bottoms = Bottoms.Chaps;
             seaLeg.NumberOfLegs = 3;
-            seaLeg.Kicks = Shoes.SteeltoeAddidas;
+            seaLeg.Kicks = Shoes.ShelltoeAdidas;
 
             var magicLeg = new MagicLeg();
             magicLeg.Bottoms = Bottoms.Chaps; //this is magical
-            magicLegLeg.HasInvisibleLegs = true;
-            magicLeg.Measuring = ("small");
+            magicLeg.HasInvisibleLegs = true;
+            magicLeg.MeasuringLegs("small");
                 Console.WriteLine($"Magic legs has length of {magicLeg.Length}.");
 
             var legs = new List<LegBase>() { seaLeg, magicLeg };
