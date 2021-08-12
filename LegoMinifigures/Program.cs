@@ -22,6 +22,7 @@ namespace LegoMinifigures
                 head.SayHi();
                 head.Spin();
             }
+
             var batmanTorso = new BatSuitTorso();
             batmanTorso.Color = LegoColor.Green;
             batmanTorso.HasBatBoomerang = true;

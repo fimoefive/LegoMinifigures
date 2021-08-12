@@ -35,9 +35,16 @@ namespace LegoMinifigures.Heads
         public override void Spin()
         {
             if (NumberOfTeeth > 0)
+                //with or without curly braces
                 NumberOfTeeth -= 1;
 
             Console.WriteLine($"The {Color} Construction Worker Head spins after being hit by a girder.");
+        }
+
+
+        public override void SayHi()
+        {
+            Console.WriteLine("Contructer Worker");
         }
 
     }
