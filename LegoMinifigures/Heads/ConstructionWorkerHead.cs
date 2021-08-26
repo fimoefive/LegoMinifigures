@@ -44,7 +44,7 @@ namespace LegoMinifigures.Heads
 
         public override void SayHi()
         {
-            Console.WriteLine("Contructer Worker");
+            Console.WriteLine("Contructer Worker head");
         }
 
     }
