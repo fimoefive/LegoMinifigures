@@ -22,6 +22,7 @@ namespace LegoMinifigures
                 head.SayHi();
                 head.Spin();
             }
+
             var batmanTorso = new BatSuitTorso();
             batmanTorso.Color = LegoColor.Green;
             batmanTorso.HasBatBoomerang = true;
@@ -59,14 +60,13 @@ namespace LegoMinifigures
 
             Console.WriteLine("Before Bob.");
 
-
-            //var bob = new Minifigure(workerHead, cowboyTorso, new SeaLeg());
+            //  passes a new SeaLeg that hasen't been previously defined in the SeaLeg.cs Class
+            //var bob = new Minifigure(workerHead, cowboyTorso, new SeaLeg()); 
             var bob = new Minifigure(workerHead, cowboyTorso, seaLeg);
             bob.BuildIt();
 
 
             Console.WriteLine("You just saw Bob do his thang!");
-            Console.ReadLine();
 
         }
     }
